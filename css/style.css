@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(60, 227, 202);
+}
+h1{
+  font-size: 2rem;
+}
+ul{
+  margin-left: 1rem;
+  list-style: disc;
+  padding-left: 1rem;
+}
