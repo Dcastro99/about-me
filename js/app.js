@@ -11,7 +11,7 @@ let doILikeMusic;
 function musicQuestion() {
   doILikeMusic = prompt('Do I like music? Yes or No?');
   doILikeMusic.toLowerCase();
-  doILikeMusic.toUpperCase();
+  //doILikeMusic.toUpperCase();
   console.log(doILikeMusic);
 
   if (doILikeMusic === 'yes') {
