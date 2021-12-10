@@ -9,9 +9,8 @@ alert('Hi' + ', ' + userName);
 let doILikeMusic;
 
 function musicQuestion() {
-  doILikeMusic = prompt('Do I like music? Yes or No?');
-  doILikeMusic.toLowerCase();
-  //doILikeMusic.toUpperCase();
+  doILikeMusic = prompt('Do I like music? Yes or No?').toLowerCase();
+
   console.log(doILikeMusic);
 
   if (doILikeMusic === 'yes') {
@@ -25,9 +24,8 @@ function musicQuestion() {
 let instrument;
 
 function instrumentQuestion() {
-  instrument = prompt('what instrument do I play? Piano or Drums?');
-  instrument.toLowerCase();
-  instrument.toUpperCase();
+  instrument = prompt('what instrument do I play? Piano or Drums?').toLowerCase();
+
   console.log(instrument);
 
   if (instrument === 'piano') {
@@ -43,9 +41,8 @@ function instrumentQuestion() {
 let travel;
 
 function travelQuestion() {
-  travel = prompt('Do I like travelling? Yes or No?');
-  travel.toLowerCase();
-  travel.toUpperCase();
+  travel = prompt('Do I like travelling? Yes or No?').toLowerCase();
+
   console.log(travel);
 
   if (travel === 'yes') {
@@ -60,9 +57,8 @@ function travelQuestion() {
 let cubanFood;
 
 function foodQuestion() {
-  cubanFood = prompt('Do I like cuban food? Yes or No?');
-  cubanFood.toLowerCase();
-  cubanFood.toUpperCase();
+  cubanFood = prompt('Do I like cuban food? Yes or No?').toLowerCase();
+
   console.log(cubanFood);
 
   if (cubanFood === 'yes') {
@@ -78,9 +74,8 @@ function foodQuestion() {
 let running;
 
 function runningQuestion() {
-  running = prompt('Do I like running? Yes or No?');
-  running.toLowerCase();
-  running.toUpperCase();
+  running = prompt('Do I like running? Yes or No?').toLowerCase();
+
   console.log(running);
 
   if (running === 'no') {
@@ -96,8 +91,8 @@ function runningQuestion() {
 let game;
 
 function gameQuestion() {
-  game = prompt('Did you have fun?');
-  game.toLowerCase();
+  game = prompt('Did you have fun?').toLowerCase();
+
   console.log(game);{
 
  
