@@ -10,7 +10,7 @@ function musicQuestion() {
 
   let doILikeMusic = prompt('Do I like music? Yes or No?').toLowerCase();
 
-  console.log(doILikeMusic);
+  //console.log(doILikeMusic);
 
   if (doILikeMusic.slice(0,1) ==='y') {
     // console.log('Yes, I like music!'); }
@@ -25,7 +25,7 @@ function musicQuestion() {
 function instrumentQuestion() {
   let instrument = prompt('Do I like playing the banjo? Yes or No?').toLowerCase();
 
-  console.log(instrument);
+  //console.log(instrument);
 
   if (instrument.slice(0,1) === 'n') {
     //console.log('Yes, I play piano!')
