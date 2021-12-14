@@ -23,18 +23,18 @@ function musicQuestion() {
 }
 
 function instrumentQuestion() {
-  let instrument = prompt('Do I like playing the banjo? yes or no?').toLowerCase();
+  let instrument = prompt('Do I like playing the banjo? Yes or No?').toLowerCase();
 
   console.log(instrument);
 
   if (instrument.slice(0,1) === 'n') {
     //console.log('Yes, I play piano!')
 
-    alert('correct, I do not like playing the banjo!');
+    alert('correct, I don\' like playing the banjo!');
     totalAnswers++;
   } else {
     //console.log('No, I play piano');
-    alert('No, I do not like playing the banjo.');
+    alert('No, I don\' like playing the banjo.');
   }
 }
 
@@ -78,11 +78,11 @@ function runningQuestion() {
   if (running.slice(0,1) === 'n') {
     //console.log('youre correct! I don't like running.')
 
-    alert('youre correct! I dont like running.');
+    alert('You\'re correct! I dont like running.');
     totalAnswers++;
   } else {
     //console.log('No, I do like travelling');
-    alert('No, I do not like running!');
+    alert('No, I don\' like running!');
   }
 }
 function howManyInstruments(){
@@ -93,11 +93,11 @@ function howManyInstruments(){
     answer = prompt('How many instruments do I play? (1-10)?');
     tries++;
     if(answer > 4){
-      alert('Try again');
       alert('You are too high!');
-    }else if(answer < 4){
       alert('Try again');
+    }else if(answer < 4){
       alert('You are too low!');
+      alert('Try again');
     } else{
       alert('You are correct!');
       correctAnswer = true;
