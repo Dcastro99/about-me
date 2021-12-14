@@ -30,11 +30,11 @@ function instrumentQuestion() {
   if (instrument.slice(0,1) === 'n') {
     //console.log('Yes, I play piano!')
 
-    alert('correct, I don\' like playing the banjo!');
+    alert('correct, I don\'t like playing the banjo!');
     totalAnswers++;
   } else {
     //console.log('No, I play piano');
-    alert('No, I don\' like playing the banjo.');
+    alert('No, I don\'t like playing the banjo.');
   }
 }
 
@@ -78,11 +78,11 @@ function runningQuestion() {
   if (running.slice(0,1) === 'n') {
     //console.log('youre correct! I don't like running.')
 
-    alert('You\'re correct! I dont like running.');
+    alert('You\'re correct! I don\'t like running.');
     totalAnswers++;
   } else {
     //console.log('No, I do like travelling');
-    alert('No, I don\' like running!');
+    alert('No, I don\'t like running!');
   }
 }
 function howManyInstruments(){
