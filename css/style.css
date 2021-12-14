@@ -13,15 +13,19 @@ h1{
   color: rgb(146, 157, 153);
   margin-top: 50px;
   
+  
 }
 ul{
   color: lightgray;
+  border:4px; border-style:solid;
+   border-color:#487272; padding: 1em; 
   text-align: center;
   font-size: 20px;
   margin-top: 50px;
   margin-left: 1rem;
   list-style: disc;
   padding-left: 1rem;
+  
 }
 h2{
   color: lightgray;
@@ -36,4 +40,12 @@ p{
    text-align: center;
   font-size: 20px;
   margin-top: 50px;
+}
+ol{
+  color: lightgray;
+  border:4px; border-style:solid;
+   border-color:#487272; padding: 1em; 
+   text-align: center;
+  font-size: 20px;
+  margin: 50px;
 }
