@@ -175,7 +175,7 @@ function gameQuestion() {
   alert('You got ' + totalAnswers + ' out of 7 questions correct!');
 
 }
-// musicQuestion();
+musicQuestion();
 travelQuestion();
 foodQuestion();
 runningQuestion();
