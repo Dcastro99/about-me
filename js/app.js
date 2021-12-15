@@ -6,9 +6,37 @@ let userName = prompt('whats you name?');
 alert('Hi' + ', ' + userName);
 let totalAnswers = 0;
 
+yesOrNoQuestion('Do I like pineapples?', 'y', 'Yes, I like pineapples', 'No, I don\'t like pineapples');
+
+function yesOrNoQuestion(question, expectedAnswer, correctResponse, incorrectResponse) {
+  let userAnswer = prompt(question).toLowerCase().slice(0,1);
+
+  let incorrectAnswer
+  //parse expected answer and create incorrect answer as the opposite
+
+  if(expectedAnswer === 'y') {
+    incorrectAnswer = 'n'
+  } else {
+    incorrectAnswer = 'y'
+  }
+
+  //check answer
+  if(userAnswer === expectedAnswer) {
+    //yes cool
+    totalAnswers++
+    alert(correctResponse)
+  } else if(userAnswer === incorrectAnswer) {
+    //wrong rip
+    alert(incorrectResponse)
+  } else {
+    //??? gibberish
+    alert("Yes or no, please!")
+  }
+}
+
 function musicQuestion() {
 
-  let doILikeMusic = prompt('Do I like music? Yes or No?').toLowerCase();
+  let doILikeMusic = prompt('Do I like music? Yes or No?')
 
   //console.log(doILikeMusic);
 
@@ -147,7 +175,7 @@ function gameQuestion() {
   alert('You got ' + totalAnswers + ' out of 7 questions correct!');
 
 }
-musicQuestion();
+// musicQuestion();
 travelQuestion();
 foodQuestion();
 runningQuestion();
