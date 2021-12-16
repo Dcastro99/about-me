@@ -32,17 +32,17 @@ function yesOrNoQuestion(question, expectedAnswer, correctResponse, incorrectRes
   }
 }
 
-function howManyInstruments(){
+function numberQuestion(question, triesAllowed, expectedNumber, tryAgain){
   let answer = '';
   let tries = 0;
   let correctAnswer = false;
   do{
-    answer = prompt('How many instruments do I play? (1-10)?');
+    answer = parseInt(prompt(question));
     tries++;
-    if(answer > 4){
+    if(answer > expectedNumber){
       alert('You are too high!');
       alert('Try again');
-    }else if(answer < 4){
+    }else if(answer < expectedNumber){
       alert('You are too low!');
       alert('Try again');
     } else{
@@ -52,9 +52,9 @@ function howManyInstruments(){
     }
   }
 
-  while(answer !=='4'&& tries<4);
+  while(answer !== expectedNumber && tries < triesAllowed);
   if(!correctAnswer){
-    alert('Nice try, but I play 4 instruments!');
+    alert(tryAgain);
   }
 }
 
@@ -99,6 +99,6 @@ yesOrNoQuestion('Do I like travelling? Yes or No?', 'y', 'Yes, I like to travel!
 yesOrNoQuestion('Do I like cuban food? Yes or No?', 'y', 'Yes, I love cuban food!', 'No, I do like cuban food!');
 yesOrNoQuestion('Do I like running? Yes or No?', 'n', 'You\'re correct! I don\'t like running.', 'No, I don\'t like running!');
 yesOrNoQuestion('Do I like playing the banjo? Yes or No?', 'n', 'Correct, I don\'t like playing the banjo!', 'No, I don\'t like playing the banjo.');
-howManyInstruments();
+numberQuestion('How many instruments do I play? (1-10)?', 4, 4, 'Nice try, but I play 4 instruments!');
 instrumentIPlay();
 gameQuestion();
