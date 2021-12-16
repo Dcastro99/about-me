@@ -58,14 +58,24 @@ function numberQuestion(question, triesAllowed, expectedNumber, tryAgain){
   }
 }
 
-function instrumentIPlay(){
+///['ornament', 'gift', 'christmas tree'] >> 'ornament, gift, and christmas tree'
+function englishList(array){
+  let builtString = '';
+  for (let i = 0; i < array.length; i++){
+    if(i === array.length -1){
+      builtString += `and ${array[i]}`;
+    } else {
+      builtString += `${array[i]}, `;
+    }
+  }
+  return builtString;
+}
 
-  let answers = ['piano','guitar','bass','drums'];
-  let attempts = 6;
+function arrayQuestion(question, attempts, answers, correctAnswer){
   let correctGuess = false;
 
   do{
-    let answer = prompt('What instruments do I play?');
+    let answer = prompt(question);
     attempts--;
     let found = false;
     for (let i = 0; i < answers.length; i++){
@@ -74,31 +84,25 @@ function instrumentIPlay(){
       }
     }
     if (found){
-
-      alert('That is correct! I play '+ answer);
+      alert(correctAnswer + answer);
       correctGuess = true;
       totalAnswers++;
     } else{
       alert('Nope! Try again! You have ' + attempts + ' attepmt(s) left.');
     }
   }
-  while(!correctGuess && attempts!==0);
+  while(!correctGuess && !attempts);
   if(!correctGuess){
-    alert('Nice try, but I play piano, guitar, drums, and bass!');
+    alert(`Nice try, but the correct answers were ${englishList(answers)}!`);
   }
 }
 
-function gameQuestion() {
-
-  alert('Thanks for playin ' + userName + '!');
-  alert('You got ' + totalAnswers + ' out of 7 questions correct!');
-
-}
 yesOrNoQuestion('Do I like music? Yes or No?', 'y', 'Yes, I like music!', 'No, I do like music');
 yesOrNoQuestion('Do I like travelling? Yes or No?', 'y', 'Yes, I like to travel!', 'No, I do like travelling!');
 yesOrNoQuestion('Do I like cuban food? Yes or No?', 'y', 'Yes, I love cuban food!', 'No, I do like cuban food!');
 yesOrNoQuestion('Do I like running? Yes or No?', 'n', 'You\'re correct! I don\'t like running.', 'No, I don\'t like running!');
 yesOrNoQuestion('Do I like playing the banjo? Yes or No?', 'n', 'Correct, I don\'t like playing the banjo!', 'No, I don\'t like playing the banjo.');
 numberQuestion('How many instruments do I play? (1-10)?', 4, 4, 'Nice try, but I play 4 instruments!');
-instrumentIPlay();
-gameQuestion();
+arrayQuestion('What instruments do I play?', 6, ['piano','guitar','bass','drums'], 'That is correct! I play ');
+alert('Thanks for playin ' + userName + '!');
+alert('You got ' + totalAnswers + ' out of 7 questions correct!');
