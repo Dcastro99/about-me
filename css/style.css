@@ -1,51 +1,61 @@
 
-body{
+body {
   background-color: rgb(0, 0, 0);
-  
+  background-image: url(/img/danny20.jpg);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position-y: 140px;
 }
 
-
-h1{
+h1 {
   background-color: coral;
   height: 70px;
   text-align: center;
   font-size: 70px;
   color: rgb(146, 157, 153);
   margin-top: 50px;
-  
-  
 }
-ul{
+
+ul {
   color: lightgray;
-  border:4px; border-style:solid;
-   border-color:#487272; padding: 1em; 
+  border:4px;
+  border-style:solid;
+  border-color:#487272;
+  padding: 1em;
   text-align: center;
   font-size: 20px;
   margin-top: 50px;
   margin-left: 1rem;
-  list-style: disc;
+  list-style: none;
   padding-left: 1rem;
-  
 }
-h2{
+
+h2 {
   color: lightgray;
   text-align: center;
   font-size: 30px;
   margin-top: 50px;
 }
-p{
+
+p {
   color: lightgray;
-  border:4px; border-style:solid;
-   border-color:#487272; padding: 1em; 
-   text-align: center;
+  border:4px;
+  border-style:solid;
+  border-color:#487272; padding: 1em; 
+  text-align: center;
   font-size: 20px;
   margin-top: 50px;
+  text-indent: 1rem;
 }
-ol{
+
+ol {
   color: lightgray;
-  border:4px; border-style:solid;
-   border-color:#487272; padding: 1em; 
-   text-align: center;
+  border:4px;
+  border-style:solid;
+  border-color:#487272; padding: 1em; 
+  border-color:#487272; padding: 1em; 
+  border-color:#487272; padding: 1em; 
+  text-align: center;
   font-size: 20px;
   margin: 50px;
 }
