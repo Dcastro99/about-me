@@ -91,7 +91,7 @@ function arrayQuestion(question, attempts, answers, correctAnswer){
       alert('Nope! Try again! You have ' + attempts + ' attepmt(s) left.');
     }
   }
-  while(!correctGuess && !attempts);
+  while(!correctGuess && --attempts);
   if(!correctGuess){
     alert(`Nice try, but the correct answers were ${englishList(answers)}!`);
   }
