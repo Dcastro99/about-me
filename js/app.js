@@ -70,6 +70,7 @@ function englishList(array){
   }
   return builtString;
 }
+//array questioingit status
 
 function arrayQuestion(question, attempts, answers, correctAnswer){
   let correctGuess = false;
